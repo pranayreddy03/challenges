@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <style>
+            #container {
+                width: 500px;
+                margin: auto;
+                margin-top: 200px;
+            }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js"></script>
+    <script src="factorialize.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+<div id="container" ng-controller="myC">
+               <h1>Factorialize</h1>
+              <input type="text" placeholder="Enter the Number" ng-model="target" size="40" ng-blur="factor()">
+             <br> <br> {{answer}}
+</div>
+</body>
+</html>
