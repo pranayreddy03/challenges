@@ -15,7 +15,7 @@
 <body>
 <div id="container" ng-controller="myC">
                <h1>Factorialize</h1>
-              <input type="text" placeholder="Enter the Number" ng-model="target" size="40" ng-blur="factor()">
+              <input type="text" placeholder="Enter the Number" ng-model="target" size="40" ng-keyup="factor()">
              <br> <br> {{answer}}
 </div>
 </body>
